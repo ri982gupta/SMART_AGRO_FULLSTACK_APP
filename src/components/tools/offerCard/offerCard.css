@@ -1,0 +1,12 @@
+.custom_hover:hover .custom_first{
+    transition: all linear .2s;
+    color: #fff;
+}
+.custom_hover:hover .custom_second{
+    transition: all linear .2s;
+    color: #fff;
+}
+.custom_hover:hover .custom_third{
+    transition: all linear .2s;
+    border:2px solid #fff
+}

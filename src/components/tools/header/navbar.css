@@ -1,0 +1,18 @@
+.cus-css{
+position: sticky;
+top: 0rem;
+/* transition: all linear 5s; */
+animation: position 1s;
+
+}
+
+@keyframes position {
+    0%{
+        top: -3rem;
+        /* transition: top 0.2s ease-in; */
+    }
+    100%{
+        top: 0rem;
+        /* transition: top 0.2s ease-in;     */
+    }
+}

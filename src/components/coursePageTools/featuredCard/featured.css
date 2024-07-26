@@ -1,0 +1,111 @@
+/* 
+.swiper-button-next,
+.swiper-button-prev
+{
+    color: #ffff !important;
+
+    width: 5%;
+    height: 15%;
+    position: absolute;
+    top: 40%;
+    right: 0rem;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    transition: all .5s;
+    border-radius: 4px;
+    opacity: 60%;
+    
+
+}
+.swiper-button-prev{
+    top:40%;
+    left: 0rem;
+}
+ 
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover{
+    background-color: transparent;
+    transition: all .5s;
+    border: none;
+} 
+
+.swiper-button-next::after,
+.swiper-button-prev::after{
+   content: ">";
+ 
+   width: 100%;
+   height: 100%;
+   color: black;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+font-size: 5rem;
+}
+
+.swiper-button-prev::after{
+content: "<";
+
+}  */
+
+.cus3-swiper-button-next,.cus3-swiper-button-prev{
+    position: absolute;
+    top: 40%;
+    right: 2rem;
+    /* background-color: black; */
+    /* border: 1px solid red; */
+    width: 5%;
+    height: 15%;
+    z-index: 10;
+    /* background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgo07ncP5lZQcXL9nfdlfSx5YcD53pWL-o6NR2u3233qtIxTXe_AK5B3WLoKNFTNKLTnrmBsUZNwN4_C4CETxxKDX53fVUMbaikNlf7kGra8vFl9ERrLwjobSQiGmJljEh8C1oAfhLhCovVxEwnPdopAnN9v8qMEJ35KpUUR8oDSrDOBId9dRSYVfQvSw/s320/Right-arrow.png'); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cus3-swiper-button-prev{
+    /* background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTQks4_Lm1txLFGVcgtPvmh-7MaScm8rk3rKhOqBe_vzf5kHWM_0Mu9j_GJVkPwa9QIHSOhn6s1z2iI6eaEA8LZU3bbhJlyQLMqFKSJDw2yD6AkgJnWor0r5CVdd4DYzPL_XmUmlRNRDAt6dps9LrQpKqXFeZ4Gs377AkYKLduYLrwS-qwVQ5qZfWyFQ/s320/left-arrow.png'); */
+    left: 0rem;
+}
+
+.cus3-swiper-button-prev::before{
+    content: '\2B9C';
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.303);
+    color: white;
+    border-radius: 100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.cus3-swiper-button-next::before
+{
+    content: "\2B9E";
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.303);
+    color: white;
+    border-radius: 100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 425px) {
+    .cus3-swiper-button-next,
+    .cus3-swiper-button-prev
+    {
+        display: none;
+    }
+    
+  }
